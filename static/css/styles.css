@@ -1,0 +1,37 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding: 20px 50px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+input {
+	position: sticky;
+	top: 0;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+}
+
+#summary {
+	margin-bottom: 20px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	padding: 5px 10px;
+}
+
+li:nth-child(odd) {
+	background-color: #eee;
+}

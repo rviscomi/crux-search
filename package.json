@@ -1,0 +1,28 @@
+{
+  "name": "crux-search",
+  "version": "0.0.1",
+  "description": "Search for origins in the Chrome UX Report",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rviscomi/crux-search.git"
+  },
+  "author": "Rick Viscomi",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rviscomi/crux-search/issues"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "start": "npm run watch & python main.py",
+    "deploy": "npm run build && gcloud app deploy --project chrome-ux-report --stop-previous-version"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-env": "^1.5.2",
+    "webpack": "^3.0.0"
+  }
+}
