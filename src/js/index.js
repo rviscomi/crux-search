@@ -9,7 +9,7 @@ fetch('/static/crux-origins.json')
 	});
 
 document.getElementById('search').addEventListener('keyup', e => {
-	const query = e.target.value;
+	const query = e.target.value.toLowerCase();
 	document.body.classList.toggle('results', !!query.length);
 	const origins = search(query);
 	updateResults(origins);

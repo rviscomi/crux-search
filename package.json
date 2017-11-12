@@ -16,7 +16,7 @@
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch",
     "start": "npm run watch & python main.py",
-    "deploy": "npm run build && gcloud app deploy --project chrome-ux-report --stop-previous-version"
+    "deploy": "npm run build && gcloud app deploy --project crux-search --stop-previous-version"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
