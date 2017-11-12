@@ -3,19 +3,37 @@ body {
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
-	padding: 20px 50px;
+	margin: 0;
+	padding: 10px 5px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	color: #333;
+	color: #444444;
+	background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		padding: 20px 50px;
+	}
+}
+
+h1 {
+	color: #0e68ce;
 }
 
 input {
 	position: sticky;
 	top: 0;
 	margin-bottom: 20px;
+	border: 3px solid #0e68ce;
+	border-radius: 5px;
 	width: 100%;
 	font-size: 18px;
 	text-align: center;
+}
+input:focus {
+	border-color: transparent;
+	outline: #f44747 auto 5px;
 }
 
 #summary {
@@ -25,6 +43,8 @@ input {
 ul {
 	margin: 0;
 	padding: 0;
+	max-width: 100%;
+	overflow-x: auto;
 }
 
 li {
@@ -33,5 +53,5 @@ li {
 }
 
 li:nth-child(odd) {
-	background-color: #eee;
+	background-color: #efefef;
 }
